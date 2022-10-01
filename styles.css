@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -5,6 +8,17 @@ ul {
     overflow: hidden;
     background-color: #333;
     width: 100%;
+  }
+
+  body {
+    background-color:white;
+  
+  }
+
+  nav{
+    z-index: 3;
+    position: fixed;
+    top: 5px;
   }
   
   li {
@@ -33,29 +47,74 @@ ul {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 80px;
+    color: #99ddff;
+    padding: 5px;
+    border-top: solid;
+    border-radius: 15px;
+    border-color: #99ddff;
+    position: relative;
+    box-sizing: inline-block;
   }
-
-  img {
-    text-align: center;
+  
+  h2{
+    color: #99ddff;
   }
 
   .imgme {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
+    display: inline-block;
+    background-color: white;
+    width: 100%;
+    position: relative;
+    top: 50px;
+    border: solid;
+    border-color: #99ddff;
+    border-radius: 15px;
+    
   }
 
   .about {
     text-align: center;
     font-family:'Courier New', Courier, monospace;
+    background-color:#DBE9EE;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    border-style: solid;
+    box-sizing: inline-block;
+    border-color:#99ddff;
+    border-radius: 15px;
+  }
+
+  .work{
+    border-style: solid;
+    text-align: center;
+    box-sizing: inline-block;
+    padding: 10px;
+    top: 100px;
+    width: 100%;
+    position: relative;
+    background-color:#DBE9EE;
+    color:#99ddff;
+    border-radius: 15px;
+  }
+
+  .contact {
+    padding: 10px;
+    box-sizing: inline-block;
+    top: 100px;
+    position: relative;
   }
 
   footer {
     text-align: center;
+    border-bottom: solid;
+    border-radius: 15px;
+    border-color: #99ddff;
   }
 
   a:hover {
-   color: teal;
+   background-color: #99ddff;
   }
 
   a:active {
